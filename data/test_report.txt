@@ -1,0 +1,223 @@
+HAWKWATCH — PIPELINE TEST REPORT
+Generated: 2026-04-26T09:55:57
+Incidents: 3
+============================================================
+
+INCIDENT 1 of 3
+ID         : 831fbad2-e26b-4af8-9ba1-b2ec0acc95c9
+Timestamp  : 2026-04-26T09:54:04
+Source     : 10.mp4
+Frame      : data/frames/frame_0000000000ms.jpg
+Severity   : WARNING
+Category   : Suspicious Activity
+Confidence : 0%
+Persons    : 4
+Activity   : A man is brandishing a long wooden stick towards a woman, which may be a martial arts training session or a physical confrontation.
+Objects    : long wooden stick, man brandishing stick
+
+
+*   Role: Security incident report writer.
+*   Input Data: Timestamp (2026-04-26T09:54:04), Source (10.mp4), Scene Description (indoor room, tiled floor, white walls, 4 people: woman in black tank/white shorts, woman in grey top, man in dark blue t-shirt/white shorts, man in light blue shirt/denim shorts with a wooden stick), Activity (man brandishing stick towards a woman, possible martial arts or confrontation), Severity (WARNING), Category (Suspicious Activity), Confidence (0%).
+*   Constraint: Use EXACT format provided. Fill every field.
+*   Output Format:
+    INCIDENT REPORT
+    ===============
+    Timestamp: ...
+    Source: ...
+    Severity: ...
+    Category: ...
+    Confidence Score: ...
+
+    Description: [2-3 sentences]
+    Persons Involved: [describe individuals — clothing, actions, count]
+    Objects / Evidence: [list notable objects, weapons, vehicles etc. or "None detected"]
+    Recommended Action: [one clear actionable instruction]
+    Report Generated: [auto]
+
+    *   *Timestamp:* 2026-04-26T09:54:04
+    *   *Source:* 10.mp4
+    *   *Severity:* WARNING
+    *   *Category:* Suspicious Activity
+    *   *Confidence Score:* 0%
+
+    *   *Description:* A man was observed brandishing a long wooden stick toward a woman in an indoor setting. The activity is currently unverified and could represent either a martial arts training session or a physical confrontation.
+
+    *   *Persons Involved:* Four individuals were present: one woman in a black tank top and white shorts, one woman in a grey top, one man in a dark blue t-shirt and white shorts, and one man in a light blue shirt and denim shorts who was actively wielding a wooden stick.
+
+    *   *Objects / Evidence:* One long wooden stick.
+
+    *   *Recommended Action:* Dispatch security personnel to the location to assess the situation and determine if the activity is authorized training or a physical altercation.
+
+    *   *Report Generated:* [auto]
+
+    *   Format check:
+        INCIDENT REPORT
+        ===============
+        Timestamp:          2026-04-26T09:54:04
+        Source:             10.mp4
+        Severity:           WARNING
+        Category:           Suspicious Activity
+        Confidence Score:   0%
+
+        Description:
+        A man was observed brandishing a long wooden stick toward a woman in an indoor room. The nature of the activity is unclear, as it may be a martial arts training session or a physical confrontation.
+
+        Persons Involved:
+        Four individuals were present: a woman in a black tank top and white shorts, a woman in a grey top, a man in a dark blue t-shirt and white shorts, and a man in a light blue shirt and denim shorts who was holding a wooden stick in an active stance.
+
+        Objects / Evidence:
+        One long wooden stick.
+
+        Recommended Action:
+        Dispatch security personnel to the scene to investigate and determine if the activity is a sanctioned training session or a physical altercation.
+
+        Report Generated: [auto]
+
+    *   Timestamp matches? Yes.
+    *   Source matches? Yes.
+    *   Severity matches? Yes.
+    *   Category matches? Yes.
+    *   Confidence matches? Yes.
+    *   Description 2-3 sentences? Yes (2 sentences).
+    *   Persons Involved (clothing, actions, count)? Yes (4 people, clothing/actions included).
+    *   Objects/Evidence? Yes.
+    *   Recommended Action (one clear instruction)? Yes.
+    *   Format exact? Yes.
+
+────────────────────────────────────────────────────────────
+
+INCIDENT 2 of 3
+ID         : 99d58bc6-6cfc-4d3b-ad3e-1e42468e1c48
+Timestamp  : 2026-04-26T09:54:52
+Source     : 10.mp4
+Frame      : data/frames/frame_0000003000ms.jpg
+Severity   : CLEAR
+Category   : Normal
+Confidence : 0%
+Persons    : 4
+Activity   : Social gathering with individuals dancing or playing.
+Objects    : man with wooden pole, woman with phone, dancing individuals
+
+
+*   Role: Security incident report writer.
+*   Input Data: Timestamp (2026-04-26T09:54:52), Source (10.mp4), Scene Description (indoor room, light tiles, white walls, 4 people, one woman on phone, three dancing/playful, one man with wooden pole, one man from behind dancing, social/non-threatening), Activity (social gathering), Severity (CLEAR), Category (Normal), Confidence (0%).
+*   Constraint: EXACT format, fill every field.
+
+    *   *Timestamp:* 2026-04-26T09:54:52
+    *   *Source:* 10.mp4
+    *   *Severity:* CLEAR
+    *   *Category:* Normal
+    *   *Confidence Score:* 0%
+    *   *Description:* Needs to be 2-3 sentences, professional.
+        *   Draft: A social gathering was observed in an indoor setting featuring light-colored tiled flooring and white walls. Four individuals were seen engaging in non-threatening, playful activities, including dancing. No suspicious behavior or security threats were identified during the observation.
+    *   *Persons Involved:*
+        *   Draft: Four individuals in total. One woman standing on the left side of the frame observing a mobile device. Three individuals in the center and background engaged in dancing or playful movement, including one male holding a long wooden pole and one male seen from the rear in a dancing posture.
+    *   *Objects / Evidence:*
+        *   Draft: One long wooden pole.
+    *   *Recommended Action:*
+        *   Draft: No immediate action required; continue routine monitoring.
+    *   *Report Generated:* [auto]
+
+    *   *Timestamp:* 2026-04-26T09:54:52 (Check)
+    *   *Source:* 10.mp4 (Check)
+    *   *Severity:* CLEAR (Check)
+    *   *Category:* Normal (Check)
+    *   *Confidence Score:* 0% (Check)
+    *   *Description:* 2-3 sentences? Yes. Professional? Yes.
+    *   *Persons Involved:* Clothing/actions/count? Count is 4. Actions are dancing/phone. Clothing isn't specified in the source, so I'll focus on actions/positions.
+    *   *Objects / Evidence:* Wooden pole.
+    *   *Recommended Action:* One clear instruction.
+    *   *Report Generated:* [auto]
+
+    INCIDENT REPORT
+    ===============
+    Timestamp:          2026-04-26T09:54:52
+    Source:             10.mp4
+    Severity:           CLEAR
+    Category:           Normal
+    Confidence Score:   0%
+
+    Description:
+    A social gathering was observed in an indoor room characterized by white walls and light-colored tiled flooring. Four individuals were seen engaging in playful, non-threatening activities such as dancing. No security breaches or suspicious activities were detected.
+
+    Persons Involved:
+    Four individuals were present: one woman standing on the left side observing a mobile phone, and three individuals in the center and background engaged in dancing, including one male holding a long wooden pole.
+
+    Objects / Evidence:
+    One long wooden pole.
+
+    Recommended Action:
+    No intervention required; continue routine surveillance.
+
+    Report Generated: [auto]
+
+────────────────────────────────────────────────────────────
+
+INCIDENT 3 of 3
+ID         : e9fbe1b4-8e48-4546-ba56-b12446a651eb
+Timestamp  : 2026-04-26T09:55:33
+Source     : 10.mp4
+Frame      : data/frames/frame_0000006000ms.jpg
+Severity   : CLEAR
+Category   : Normal
+Confidence : 0%
+Persons    : 0
+Activity   : Parse error — manual review required
+Objects    : None
+
+
+*   Role: Security incident report writer.
+*   Input Data:
+    *   Timestamp: 2026-04-26T09:55:33
+    *   Source: 10.mp4
+    *   Scene Description: Indoor room, tiled floors, white walls. Three people: Woman standing/looking at phone; Man in blue/white striped shirt and denim shorts holding a long wooden stick/pole in a confrontational pose; Woman on floor curled up in distress.
+    *   Activity: Parse error (manual review required).
+    *   Severity: CLEAR.
+    *   Category: Normal.
+    *   Confidence: 0%.
+*   Constraint: Use EXACT format provided. Fill every field.
+
+    *   *Timestamp:* 2026-04-26T09:55:33
+    *   *Source:* 10.mp4
+    *   *Severity:* CLEAR
+    *   *Category:* Normal
+    *   *Confidence Score:* 0%
+    *   *Description:* The surveillance footage shows a potential physical altercation or distress situation in an indoor room. A man is observed in a confrontational stance with a wooden pole, while another individual is on the floor in a state of distress.
+    *   *Persons Involved:* Three individuals: one woman standing and using a mobile device, one man wearing a blue and white striped shirt and denim shorts holding a long wooden pole, and one woman curled on the floor appearing to be in distress.
+    *   *Objects / Evidence:* One long wooden stick/pole.
+    *   *Recommended Action:* Dispatch security personnel to the location immediately to assess the situation and provide assistance.
+    *   *Report Generated:* [Current Date/Time or just "auto" as requested? The prompt says "Report Generated: [auto]", implying I should write "[auto]" or a placeholder. Looking at the prompt: "Report Generated: [auto]". I will use "[auto]" or a timestamp if I want to be helpful, but the prompt says "Write the report in EXACTLY this format". I'll stick to the format.]
+
+    *   *Description:* Needs to be 2-3 sentences. "Surveillance footage from 10.mp4 captures a potential physical confrontation in an indoor setting. A man is seen in a confrontational pose with a wooden object, while a woman is observed on the floor in apparent distress."
+    *   *Persons Involved:* "Three individuals are present: a woman standing and looking at a phone, a man in a blue/white striped shirt and denim shorts holding a wooden pole, and a woman curled on the floor in distress."
+    *   *Objects / Evidence:* "One long wooden stick/pole."
+    *   *Recommended Action:* "Dispatch immediate on-site security intervention to assess the welfare of the individuals and de-escalate the situation."
+
+    INCIDENT REPORT
+    ===============
+    Timestamp:          2026-04-26T09:55:33
+    Source:             10.mp4
+    Severity:           CLEAR
+    Category:           Normal
+    Confidence Score:   0%
+
+    Description:
+    Surveillance footage captures a potential physical confrontation within an indoor room. A man is observed in a confrontational stance, while a woman is seen on the floor appearing to be in significant distress.
+
+    Persons Involved:
+    Three individuals: one woman standing and using a mobile phone, one man wearing a blue and white striped shirt and denim shorts holding a wooden pole, and one woman curled on the floor.
+
+    Objects / Evidence:
+    One long wooden stick/pole.
+
+    Recommended Action:
+    Dispatch security personnel to the location immediately to conduct a welfare check and de-escalate the situation.
+
+    Report Generated: [auto]
+
+    *   Format exact? Yes.
+    *   Every field filled? Yes.
+    *   Description 2-3 sentences? Yes.
+    *   Professional tone? Yes.
+
+────────────────────────────────────────────────────────────
