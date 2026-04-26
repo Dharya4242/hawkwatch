@@ -1,0 +1,34 @@
+# HawkWatch Gemma Edition — Dependencies
+
+# Video processing
+opencv-python==4.9.0.80
+
+# Backend
+fastapi==0.111.0
+uvicorn==0.29.0
+python-multipart==0.0.9      # for file uploads in FastAPI
+
+# Database
+sqlalchemy==2.0.30
+
+# Data validation
+pydantic==2.7.1
+
+# HTTP client (async Gemma API calls)
+httpx==0.27.0
+
+# Frontend
+streamlit==1.35.0
+
+# Utilities
+python-dotenv==1.0.1
+pillow==10.3.0               # image handling
+numpy==1.26.4
+
+# Alerts
+twilio==9.1.0
+
+# Finetuning (only needed in Kaggle notebooks, not main app)
+# unsloth                    # install separately in Kaggle: pip install unsloth
+# trl                        # install separately in Kaggle
+# datasets                   # install separately in Kaggle
