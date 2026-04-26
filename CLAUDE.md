@@ -444,7 +444,7 @@ QueryResult:
 - [x] Phase 1 Step 1 — pipeline/frame_extractor.py       DONE
 - [x] models/prompts.py                                   DONE
 - [x] Phase 1 Step 2 — pipeline/gemma_client.py          DONE
-- [ ] Phase 1 Step 3 — pipeline/incident_detector.py     TODO
+- [x] Phase 1 Step 3 — pipeline/incident_detector.py     DONE
 - [ ] Phase 1 Step 4 — pipeline/report_generator.py      TODO
 - [ ] Phase 1 Step 5 — scripts/test_pipeline.py          TODO
 - [ ] Phase 2 — Backend                                   NOT STARTED
