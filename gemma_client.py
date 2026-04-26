@@ -23,7 +23,7 @@ from pathlib import Path
 import httpx
 from dotenv import load_dotenv
 
-from prompts import FRAME_ANALYSIS_PROMPT, REPORT_GENERATION_PROMPT
+from prompts import FRAME_ANALYSIS_PROMPT, NL_QUERY_PROMPT, REPORT_GENERATION_PROMPT
 
 load_dotenv()
 
@@ -219,6 +219,35 @@ def generate_report(
             f"ERROR: Report generation failed — {e}\n"
             f"Recommended Action: Manual review required."
         )
+
+
+def search_incidents(query: str, incidents_json: str) -> str:
+    """
+    Use Gemma to rank incidents against a natural language query.
+
+    Args:
+        query:          Free-text search string from the user.
+        incidents_json: JSON string array of incident records to search through.
+
+    Returns:
+        Raw JSON array string of matching incidents (as per NL_QUERY_PROMPT schema).
+        On failure, returns "[]" so the caller always gets a parseable result.
+    """
+    print(f"  [Gemma] NL search | query='{query[:60]}' | endpoint={GEMMA_ENDPOINT}")
+    prompt = NL_QUERY_PROMPT.format(query=query, incidents_json=incidents_json)
+
+    try:
+        if GEMMA_ENDPOINT == "aistudio":
+            raw = _aistudio_text(prompt)
+        else:
+            raw = _ngrok_text(prompt)
+
+        print(f"  [Gemma] Search response received ({len(raw)} chars)")
+        return raw
+
+    except Exception as e:
+        print(f"  [Gemma] ERROR in search_incidents: {e}")
+        return "[]"
 
 
 # ── Quick test ─────────────────────────────────────────────────────────────────

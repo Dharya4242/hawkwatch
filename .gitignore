@@ -3,3 +3,5 @@ venv
 .env
 
 dj-points/
+
+__pycache__/

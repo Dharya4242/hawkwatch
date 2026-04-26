@@ -441,13 +441,33 @@ QueryResult:
 
 ## Current Build Status
 
-- [x] Phase 1 Step 1 — pipeline/frame_extractor.py       DONE
-- [x] models/prompts.py                                   DONE
-- [x] Phase 1 Step 2 — pipeline/gemma_client.py          DONE
-- [x] Phase 1 Step 3 — pipeline/incident_detector.py     DONE
-- [x] Phase 1 Step 4 — pipeline/report_generator.py      DONE
-- [x] Phase 1 Step 5 — scripts/test_pipeline.py          DONE
-- [ ] Phase 2 — Backend                                   NOT STARTED
+NOTE: Files are currently at project root (not in pipeline/ or models/ subdirs).
+      Directory structure will be reorganised before final submission.
+
+PHASE 1 — Pipeline (COMPLETE)
+- [x] frame_extractor.py      OpenCV frame extraction + motion detection
+- [x] prompts.py              All Gemma prompt templates centralised here
+- [x] gemma_client.py         AI Studio REST API wrapper (Phase 1); ngrok swap-ready (Phase 3)
+                               Public API: analyze_frame(), generate_report(), search_incidents()
+- [x] incident_detector.py    Parses Gemma JSON → typed Incident dataclass
+                               Handles markdown fences, embedded JSON, unknown enum values
+- [x] report_generator.py     Calls gemma_client.generate_report(), attaches report to Incident
+- [x] test_pipeline.py        End-to-end: MP4 → frames → Gemma → incidents → data/test_report.txt
+
+PHASE 2 — Backend (COMPLETE)
+- [x] backend/database.py     SQLAlchemy engine + IncidentDB ORM model + get_db() dependency
+- [x] backend/models.py       Pydantic: IncidentRead, QueryRequest, QueryResult, QueryMatch
+- [x] backend/alerts.py       Twilio SMS for CRITICAL incidents (skips if not configured)
+- [x] backend/routes/upload.py    POST /upload — receive MP4, run pipeline, save to DB
+- [x] backend/routes/stream.py    POST /stream — accept URL, run pipeline, save to DB
+- [x] backend/routes/incidents.py GET /incidents (filterable) + GET /incidents/{id}
+- [x] backend/routes/query.py     POST /query — NL search via Gemma, returns ranked matches
+- [x] backend/main.py         FastAPI app, CORS, static /frames mount, DB init on startup
+
+Run the backend:
+    uvicorn backend.main:app --reload --port 8000
+    Open: http://localhost:8000/docs
+
 - [ ] Phase 3 — Frontend                                  NOT STARTED
 - [ ] Phase 4 — Finetuning                                NOT STARTED
 
