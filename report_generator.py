@@ -35,6 +35,9 @@ def generate_report(incident: Incident) -> Incident:
         severity=incident.severity,
         category=incident.category,
         confidence=incident.confidence,
+        persons_count=incident.persons_count,
+        recommended_action=incident.recommended_action,
+        objects_of_interest=incident.objects_of_interest,
     )
 
     incident.report = report

@@ -27,9 +27,7 @@ Severity guide:
 Be precise. Real security personnel will act on this information."""
 
 
-REPORT_GENERATION_PROMPT = """You are a security incident report writer.
-
-Given this incident data, write a formal structured report.
+REPORT_GENERATION_PROMPT = """You are a security incident report writer. Output ONLY the formatted report below — no reasoning, no notes, no preamble.
 
 Incident Data:
 - Timestamp: {timestamp}
@@ -39,8 +37,6 @@ Incident Data:
 - Severity: {severity}
 - Category: {category}
 - Confidence: {confidence}%
-
-Write the report in EXACTLY this format, fill every field:
 
 INCIDENT REPORT
 ===============
@@ -87,6 +83,17 @@ Return ONLY a valid JSON array of matches, ordered by relevance (most relevant f
 Only include incidents with relevance_score above 40.
 If nothing matches, return an empty array: []
 No extra text, just the JSON array."""
+
+
+SCENE_DESCRIPTION_PROMPT = """You are a surveillance camera assistant.
+
+Describe this camera frame in precise detail. Cover:
+- Who is present (count, clothing, actions)
+- What is happening
+- Location context (indoor/outdoor, lighting, setting)
+- Any objects of interest
+
+Write 2-4 clear sentences. Plain text only — no JSON, no lists."""
 
 
 FINETUNING_PROMPT_TEMPLATE = """Below is a security footage description. Generate a structured incident report.
