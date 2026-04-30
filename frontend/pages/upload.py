@@ -8,8 +8,8 @@ from pathlib import Path
 import httpx
 import streamlit as st
 
-# API_BASE = os.getenv("API_BASE_URL", "http://localhost:8000")
-API_BASE = os.getenv("API_BASE_URL", "https://arnette-permutable-bridger.ngrok-free.dev")
+API_BASE = os.getenv("API_BASE_URL", "http://localhost:8000")
+# API_BASE = os.getenv("API_BASE_URL", "https://arnette-permutable-bridger.ngrok-free.dev")
 
 _SEVERITY_ICON = {"CRITICAL": "🔴", "WARNING": "🟡", "CLEAR": "🟢"}
 
