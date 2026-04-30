@@ -33,6 +33,7 @@ _UPLOAD_DIR = Path("data/uploads")
 @router.post("/upload", response_model=List[IncidentRead])
 async def upload_video(
     file: UploadFile = File(...),
+    max_frames: int = None,
     db: Session = Depends(get_db),
 ):
     """
@@ -55,7 +56,7 @@ async def upload_video(
     with open(save_path, "wb") as f:
         shutil.copyfileobj(file.file, f)
 
-    max_frames = int(os.getenv("MAX_FRAMES_PER_UPLOAD", "20"))
+    max_frames = max_frames or int(os.getenv("MAX_FRAMES_PER_UPLOAD", "20"))
     interval = float(os.getenv("FRAME_INTERVAL_SECONDS", "3"))
     motion_threshold = int(os.getenv("MOTION_THRESHOLD", "500"))
 
