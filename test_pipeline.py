@@ -43,7 +43,7 @@ def run_pipeline(video_path: str, max_frames: int = 5) -> list[incident_detector
         List of completed Incident objects (with reports attached).
     """
     print("\n" + "=" * 60)
-    print("HawkWatch — end-to-end pipeline test")
+    print("SecureSight — end-to-end pipeline test")
     print(f"Video : {video_path}")
     print(f"Limit : {max_frames} frames")
     print(f"Time  : {datetime.now().isoformat(timespec='seconds')}")
@@ -98,7 +98,7 @@ def save_summary(incidents: list[incident_detector.Incident], output_path: str) 
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
 
     lines = [
-        "HAWKWATCH — PIPELINE TEST REPORT",
+        "SecureSight — PIPELINE TEST REPORT",
         f"Generated: {datetime.now().isoformat(timespec='seconds')}",
         f"Incidents: {len(incidents)}",
         "=" * 60,

@@ -58,7 +58,7 @@ if __name__ == "__main__":
     from datetime import datetime
 
     print("=" * 60)
-    print("HawkWatch — report_generator.py smoke test")
+    print("SecureSight — report_generator.py smoke test")
     print("=" * 60)
 
     # Build a realistic test incident (as if incident_detector.py produced it)

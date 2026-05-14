@@ -2,7 +2,7 @@
 backend/routes/stream.py — POST /stream
 
 Accepts a live stream or remote video URL (RTSP / YouTube / direct MP4 link),
-runs the HawkWatch pipeline on it, and saves incidents to the database.
+runs the SecureSight pipeline on it, and saves incidents to the database.
 
 Behaviour is identical to /upload — the only difference is the video source
 is a URL instead of an uploaded file.

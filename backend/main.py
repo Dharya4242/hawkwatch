@@ -25,7 +25,7 @@ from backend.database import create_tables
 from backend.routes import incidents, query, stream, upload
 
 app = FastAPI(
-    title="HawkWatch API",
+    title="SecureSight API",
     description=(
         "Open-source AI video surveillance and disaster response platform. "
         "Powered by finetuned Gemma 4."
@@ -57,11 +57,11 @@ app.include_router(query.router, tags=["Search"])
 def on_startup():
     """Create database tables on first run."""
     create_tables()
-    print("[HawkWatch] Database ready.")
-    print("[HawkWatch] API running — visit http://localhost:8000/docs")
+    print("[SecureSight] Database ready.")
+    print("[SecureSight] API running — visit http://localhost:8000/docs")
 
 
 @app.get("/health", tags=["Meta"])
 def health():
     """Liveness check — returns OK if the server is up."""
-    return {"status": "ok", "service": "hawkwatch"}
+    return {"status": "ok", "service": "SecureSight"}

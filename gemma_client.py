@@ -1,5 +1,5 @@
 """
-gemma_client.py — Wraps Gemma 4 inference for the HawkWatch pipeline.
+gemma_client.py — Wraps Gemma 4 inference for the SecureSight pipeline.
 
 Phase 1 (testing):  calls Google AI Studio REST API with base Gemma 4.
 Phase 3 (final):    calls finetuned Gemma 4 served on Kaggle GPU via ngrok.
@@ -421,7 +421,7 @@ if __name__ == "__main__":
     import sys
 
     print("=" * 60)
-    print("HawkWatch — gemma_client.py smoke test")
+    print("SecureSight — gemma_client.py smoke test")
     print(f"  GEMMA_ENDPOINT : {GEMMA_ENDPOINT}")
     print(f"  GEMMA_MODEL    : {GEMMA_MODEL}")
     if GEMMA_ENDPOINT == "aistudio":

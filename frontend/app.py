@@ -1,5 +1,5 @@
 """
-frontend/app.py — HawkWatch Streamlit entry point.
+frontend/app.py — SecureSight Streamlit entry point.
 
 Run from project root:
     streamlit run frontend/app.py
@@ -17,14 +17,14 @@ import streamlit as st
 sys.path.insert(0, str(Path(__file__).parent))
 
 st.set_page_config(
-    page_title="HawkWatch — AI Surveillance",
+    page_title="SecureSight — AI Surveillance",
     page_icon="🦅",
     layout="wide",
     initial_sidebar_state="expanded",
 )
 
 with st.sidebar:
-    st.markdown("## 🦅 HawkWatch")
+    st.markdown("## 🦅 SecureSight")
     st.markdown("*AI Surveillance & Disaster Response*")
     st.divider()
     page = st.radio(

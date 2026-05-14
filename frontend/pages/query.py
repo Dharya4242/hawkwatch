@@ -85,7 +85,7 @@ def show():
     st.title("🔍 Search Incidents")
     st.markdown(
         "Describe what you're looking for in plain English. "
-        "HawkWatch searches all stored incidents and returns the most relevant matches."
+        "SecureSight searches all stored incidents and returns the most relevant matches."
     )
 
     # Example query buttons

@@ -212,7 +212,7 @@ if __name__ == "__main__":
         python incident_detector.py
     """
     print("=" * 60)
-    print("HawkWatch — incident_detector.py smoke test")
+    print("SecureSight — incident_detector.py smoke test")
     print("=" * 60)
 
     test_cases = [

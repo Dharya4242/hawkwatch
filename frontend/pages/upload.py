@@ -1,5 +1,5 @@
 """
-frontend/pages/upload.py — Upload an MP4 and run the HawkWatch pipeline.
+frontend/pages/upload.py — Upload an MP4 and run the SecureSight pipeline.
 """
 
 import os
@@ -53,17 +53,17 @@ def show():
     st.title("📤 Analyze Video")
     st.markdown(
         "Upload a surveillance video (MP4 / MOV / AVI). "
-        "HawkWatch extracts frames, analyzes each with your finetuned Gemma 4 model, "
+        "SecureSight extracts frames, analyzes each with your finetuned Gemma 4 model, "
         "and generates structured incident reports."
     )
 
     # Backend status
     try:
         r = httpx.get(f"{API_BASE}/health", timeout=3.0)
-        if r.status_code == 200:
-            st.success(f"Backend connected — {API_BASE}", icon="✅")
-        else:
-            st.warning(f"Backend returned {r.status_code}", icon="⚠️")
+        # if r.status_code == 200:
+        #     st.success(f"Backend connected — {API_BASE}", icon="✅")
+        # else:
+        #     st.warning(f"Backend returned {r.status_code}", icon="⚠️")
     except Exception:
         st.error(
             f"Cannot reach backend at **{API_BASE}**. "

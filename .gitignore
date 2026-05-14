@@ -5,3 +5,5 @@ venv
 dj-points/
 
 __pycache__/
+
+data/

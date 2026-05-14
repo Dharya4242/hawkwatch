@@ -1,7 +1,7 @@
 """
 backend/routes/upload.py — POST /upload
 
-Accepts an MP4 (or MOV/AVI) file upload, runs the full HawkWatch pipeline
+Accepts an MP4 (or MOV/AVI) file upload, runs the full SecureSight pipeline
 on it, saves every incident to the database, sends SMS alerts for CRITICAL
 incidents, and returns the list of incidents as JSON.
 """
@@ -37,7 +37,7 @@ async def upload_video(
     db: Session = Depends(get_db),
 ):
     """
-    Upload an MP4 video, run the HawkWatch pipeline, and return all incidents found.
+    Upload an MP4 video, run the SecureSight pipeline, and return all incidents found.
 
     - Extracts frames (motion-filtered, every FRAME_INTERVAL_SECONDS seconds)
     - Analyzes each frame with Gemma 4

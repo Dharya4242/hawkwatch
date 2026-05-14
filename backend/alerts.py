@@ -41,7 +41,7 @@ def send_sms_alert(incident) -> bool:
         from twilio.rest import Client
 
         body = (
-            f"HAWKWATCH {incident.severity} ALERT\n"
+            f"SecureSight {incident.severity} ALERT\n"
             f"Category : {incident.category}\n"
             f"Source   : {incident.video_source}\n"
             f"Time     : {incident.timestamp}\n"
